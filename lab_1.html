@@ -1,17 +1,21 @@
 <html>
-<script>
+
 <head>
-  <meta charset="utf-8">
-  <script src="one.js"></script>
-  <title>Калькулятор</title>
-  <meta name="Calculator" content="Задание №1">
-  <link rel="icon" href="C:\UsersАнастасия\DesktopУчеба\2 курсТехнологии обработки информацииЗадача 1\icon.ico">
+<meta charset="utf-8">
+<title>Калькулятор</title>
 </head>
+
 <body>
-<p><button type="submit" id="submit1">1</button>
-document.querySelector("#submit").onclick = function(){
-  alert("Вы нажали на кнопку");
+<p id="test">Что-нибудь</p>
+<input class="input_1">
+<button class="but_1">Ввести число a</button>
+<script>
+let inputIn = document.querySelector('.input_1');
+let button = document.querySelector('.but_1');
+button.onclick = function () {
+document.getElementById('test').innerHTML = inputIn.value;
 }
-</body>
 </script>
+</body>
+
 </html>
