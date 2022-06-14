@@ -1,4 +1,5 @@
 import cmath
+import math
 import random
 
 proc = input('Введите один из знаков опрации: [+, -, *, /, x^n, random, !, acos] ')
@@ -33,7 +34,7 @@ def rand():
 
 def factorial():
     a = int(input('Введите число: '))
-    return cmath.factorial(a)
+    return math.factorial(a)
 
 def arccos():
     a = float(input('Введите число: '))

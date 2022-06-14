@@ -1,4 +1,5 @@
 import cmath
+import math
 import random
 
 oper = input('Введите один из знаков опрации: [+, -, *, /, x^n, random, !, acos] ')
@@ -32,7 +33,7 @@ elif oper == 'random':
    print(random.randint(0,1000))
 elif oper == '!':
     a = int(input('Введите число: '))
-    с = cmath.factorial(a)
+    с = math.factorial(a)
     print('Ответ: ', с)
 elif oper == 'acos':
     a = float(input('Введите число: '))
