@@ -1,52 +1,40 @@
-import math
+import cmath
 import random
 
 oper = input('Введите один из знаков опрации: [+, -, *, /, x^n, random, !, acos] ')
 
 if oper == '+':
-    print('Введите первое число ')
-    a = int(input())
-    print('Введите второе число ')
-    b = int(input())
+    a = int(input('Введите первое число: '))
+    b = int(input('Введите второе число: '))
     с = a+b
     print('Ответ: ',с)
 elif oper == '-':
-    print('Введите первое число ')
-    a = int(input())
-    print('Введите второе число ')
-    b = int(input())
+    a = int(input('Введите первое число: '))
+    b = int(input('Введите второе число: '))
     с = a-b
     print('Ответ: ',с)
 elif oper == '*':
-    print('Введите первое число ')
-    a = int(input())
-    print('Введите второе число ')
-    b = int(input())
+    a = int(input('Введите первое число: '))
+    b = int(input('Введите второе число: '))
     с = a * b
     print('Ответ: ',с)
 elif oper == '/':
-    print('Введите первое число ')
-    a = float(input())
-    print('Введите второе число ')
-    b = float(input())
+    a = float(input('Введите первое число: '))
+    b = float(input('Введите второе число: '))
     с = a/b
     print('Ответ: ',с)
 elif oper == 'x^n':
-    print('Введите число ')
-    a = int(input())
-    print('Введите степень числа ')
-    b = int(input())
+    a = int(input('Введите число: '))
+    b = int(input('Введите степень числа: '))
     с = a ** b
     print('Ответ: ',с)
 elif oper == 'random':
    print(random.randint(0,1000))
 elif oper == '!':
-    print('Введите число ')
-    a = int(input())
-    с = math.factorial(a)
+    a = int(input('Введите число: '))
+    с = cmath.factorial(a)
     print('Ответ: ', с)
 elif oper == 'acos':
-    print('Введите число ')
-    a = float(input())
-    с = math.acos(a)
+    a = float(input('Введите число: '))
+    с = cmath.acos(a)
     print('Ответ: ', с)
