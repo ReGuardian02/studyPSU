@@ -3,7 +3,7 @@ import math
 import random
 
 
-class Canculator:
+class Calculator:
     def __init__(self):
         pass
 
@@ -71,5 +71,5 @@ class Canculator:
             print(answ)
 
 
-calc = Canculator()
+calc = Calculator()
 calc.main()
